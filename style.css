@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap");
+body {
+  text-align: center;
+  background: linear-gradient(to right, #878698, #5d5e65);
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0 50px;
+}
+@media (max-width: 520px) {
+  body {
+    padding: 10px;
+  }
+}
+
+.title_app {
+  color: #080229;
+  animation: textShadowAnimation 3s infinite;
+}
+/*
+@keyframes textShadowAnimation {
+  0% {
+    text-shadow: none;
+  }
+  50% {
+    color: #fff;
+    text-shadow: 2px 7px 4px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+*/
+.parameteros {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #38ef7d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: #fff;
+  padding: 5px 0;
+  box-shadow: 2px 3px 5px #38ef7d;
+}
+@media (max-width: 520px) {
+  .parameteros {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0;
+  }
+}
+
+.category,
+.difficulty,
+.type {
+    color: #000000;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.message {
+  margin-top: 50px;
+  color: #ffffff;
+}
+
+.btn {
+  padding: 10px;
+  background: #ed8f03;
+  border-radius: 7px;
+  color: #000000;
+  font-weight: 900;
+  border: 1px solid #000000;
+  cursor: pointer;
+}
+
+.title_question,
+.text_question {
+  color: #000000;
+}
+
+.questions {
+  text-align: left;
+  padding: 0 35%;
+}
+.questions .question_item {
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+}
+.questions .question_item p {
+  color: #000000;
+}
+@media (max-width: 520px) {
+  .questions {
+    padding: 0;
+  }
+}
+
+.correct {
+  color: green !important;
+}
+
+.incorrect {
+  color: red !important;
+}
+
+.btn_actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+.btn_actions button {
+  padding: 10px;
+  background: #ed8f03;
+  border-radius: 7px;
+  color: #000000;
+  font-weight: 900;
+  border: 1px solid #000000;
+}
+.btn_actions button:last-child {
+  background: transparent;
+}
+
+.score {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #000000;
+  text-shadow: 2px 3px 5px #000;
+}

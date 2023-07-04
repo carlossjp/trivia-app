@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia App</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <h1 class="title_app">TriviaApp - Preguntas</h1>
+
+    <div id="parametros" class="parametros">
+      <label for="category">Categorías:</label>
+      <select id="category" class="category">
+        <!-- Categorías -->
+      </select>
+
+      <label for="difficulty">Dificultad:</label>
+      <select id="difficulty" class="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="medium">Medio</option>
+        <option value="hard">Difícil</option>
+      </select>
+
+      <label for="type">Tipo de respuesta:</label>
+      <select id="type" class="type">
+        <option value="multiple">Múltiple</option>
+        <option value="boolean">Verdadero/Falso</option>
+      </select>
+
+      <button onclick="generateQuestions()" class="btn" id="generateQuestions">
+        Generar preguntas
+      </button>
+    </div>
+
+    <p id="message" class="message"></p>
+    <div id="trivia" style="display: none">
+      <h2 class="title_question">Cuestionario</h2>
+      <p class="text_question">
+        Las preguntas están siendo generadas en idioma inglés por la API
+      </p>
+      <div id="questions" class="questions"></div>
+      <h3 id="score" class="score"></h3>
+      <div class="btn_actions">
+        <button onclick="calculateResult()">Calcular Puntaje</button>
+        <button onclick="resetQuestions()">Crear Nueva Trivia</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
